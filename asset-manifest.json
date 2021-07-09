@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/FilterImagegalleryReact/static/css/main.a617e044.chunk.css",
+    "main.js": "/FilterImagegalleryReact/static/js/main.11feba0f.chunk.js",
+    "main.js.map": "/FilterImagegalleryReact/static/js/main.11feba0f.chunk.js.map",
+    "runtime-main.js": "/FilterImagegalleryReact/static/js/runtime-main.0e42ea86.js",
+    "runtime-main.js.map": "/FilterImagegalleryReact/static/js/runtime-main.0e42ea86.js.map",
+    "static/js/2.a8d480e0.chunk.js": "/FilterImagegalleryReact/static/js/2.a8d480e0.chunk.js",
+    "static/js/2.a8d480e0.chunk.js.map": "/FilterImagegalleryReact/static/js/2.a8d480e0.chunk.js.map",
+    "static/js/3.f837ec0b.chunk.js": "/FilterImagegalleryReact/static/js/3.f837ec0b.chunk.js",
+    "static/js/3.f837ec0b.chunk.js.map": "/FilterImagegalleryReact/static/js/3.f837ec0b.chunk.js.map",
+    "index.html": "/FilterImagegalleryReact/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/FilterImagegalleryReact/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.a8d480e0.chunk.js.LICENSE.txt": "/FilterImagegalleryReact/static/js/2.a8d480e0.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/FilterImagegalleryReact/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0e42ea86.js",
+    "static/js/2.a8d480e0.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.11feba0f.chunk.js"
+  ]
+}
