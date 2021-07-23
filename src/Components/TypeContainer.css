@@ -1,0 +1,35 @@
+.typeContainer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height:80px;   
+    width:70%;
+    margin:0 auto 1.5em;
+}
+.typeContainer h2{
+    margin-right:.5em;
+}
+.magOn{
+    pointer-events: none;
+    opacity:0.5;
+}
+.newType{
+    width:100%;
+}
+.newType div{
+    display:flex;
+    justify-content: center;
+    width:fit-content;
+    margin:auto;
+    cursor:pointer;
+}
+.addType{
+    font-size:2rem;
+    color:#e2f3f5;
+}
+.newType p{
+    font-size:1.35rem;
+    margin-left:.5em;
+    color:#e2f3f5;
+}

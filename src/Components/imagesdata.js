@@ -1,0 +1,32 @@
+export const imagesdata = [
+    {
+        type:'all',
+        select:true,
+        id:'1'
+    },
+    {
+        type:'camera',
+        select:false,
+        id:'2'
+    },
+    {
+        type:'headphone',
+        select:false,
+        id:'3'
+    },
+    {
+        type:'watch',
+        select:false,
+        id:'4'
+    },
+    {
+        type:'shoe',
+        select:false,
+        id:'5'
+    },
+    {
+        type:'glasses',
+        select:false,
+        id:'6'
+    }
+]
