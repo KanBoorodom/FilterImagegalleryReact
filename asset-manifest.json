@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/FilterImagegalleryReact/static/css/main.a617e044.chunk.css",
-    "main.js": "/FilterImagegalleryReact/static/js/main.9fd1b5c4.chunk.js",
-    "main.js.map": "/FilterImagegalleryReact/static/js/main.9fd1b5c4.chunk.js.map",
-    "runtime-main.js": "/FilterImagegalleryReact/static/js/runtime-main.0e42ea86.js",
-    "runtime-main.js.map": "/FilterImagegalleryReact/static/js/runtime-main.0e42ea86.js.map",
-    "static/js/2.a8d480e0.chunk.js": "/FilterImagegalleryReact/static/js/2.a8d480e0.chunk.js",
-    "static/js/2.a8d480e0.chunk.js.map": "/FilterImagegalleryReact/static/js/2.a8d480e0.chunk.js.map",
-    "static/js/3.f837ec0b.chunk.js": "/FilterImagegalleryReact/static/js/3.f837ec0b.chunk.js",
-    "static/js/3.f837ec0b.chunk.js.map": "/FilterImagegalleryReact/static/js/3.f837ec0b.chunk.js.map",
+    "main.css": "/FilterImagegalleryReact/static/css/main.de753bde.chunk.css",
+    "main.js": "/FilterImagegalleryReact/static/js/main.3790cb0e.chunk.js",
+    "main.js.map": "/FilterImagegalleryReact/static/js/main.3790cb0e.chunk.js.map",
+    "runtime-main.js": "/FilterImagegalleryReact/static/js/runtime-main.31adc6ab.js",
+    "runtime-main.js.map": "/FilterImagegalleryReact/static/js/runtime-main.31adc6ab.js.map",
+    "static/js/2.da9028ea.chunk.js": "/FilterImagegalleryReact/static/js/2.da9028ea.chunk.js",
+    "static/js/2.da9028ea.chunk.js.map": "/FilterImagegalleryReact/static/js/2.da9028ea.chunk.js.map",
+    "static/js/3.f439f960.chunk.js": "/FilterImagegalleryReact/static/js/3.f439f960.chunk.js",
+    "static/js/3.f439f960.chunk.js.map": "/FilterImagegalleryReact/static/js/3.f439f960.chunk.js.map",
     "index.html": "/FilterImagegalleryReact/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/FilterImagegalleryReact/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.a8d480e0.chunk.js.LICENSE.txt": "/FilterImagegalleryReact/static/js/2.a8d480e0.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/FilterImagegalleryReact/static/media/logo.6ce24c58.svg"
+    "static/css/main.de753bde.chunk.css.map": "/FilterImagegalleryReact/static/css/main.de753bde.chunk.css.map",
+    "static/js/2.da9028ea.chunk.js.LICENSE.txt": "/FilterImagegalleryReact/static/js/2.da9028ea.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0e42ea86.js",
-    "static/js/2.a8d480e0.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.9fd1b5c4.chunk.js"
+    "static/js/runtime-main.31adc6ab.js",
+    "static/js/2.da9028ea.chunk.js",
+    "static/css/main.de753bde.chunk.css",
+    "static/js/main.3790cb0e.chunk.js"
   ]
 }
