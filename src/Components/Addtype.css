@@ -1,0 +1,18 @@
+.getType{
+    position:fixed;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:red;
+    height:300px;
+    width:30%;
+    z-index:999;
+    margin:auto;
+    left:0;
+    right:0;
+}
+
+.typeInput{
+    height:40px;
+    width:90%;
+}

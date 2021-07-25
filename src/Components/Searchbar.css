@@ -4,7 +4,7 @@
     margin:1em auto;
 }
 
-input{
+.searchInput{
     padding:1em 0 1em 1.5em;
     border-radius:15px;
     border:none;
@@ -13,10 +13,10 @@ input{
     transition:all 1s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-input:hover{
+/* input:hover{
     transform: scale(1.05);
     transition:all 1s;
-}
+} */
 .search{
     font-size:1.25rem;
     position:absolute;

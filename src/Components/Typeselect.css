@@ -5,6 +5,7 @@
     transition: all 1s;
     font-size:1.25rem;
     color:white;
+    height:fit-content;
     text-transform: capitalize;
     cursor:pointer;
 }
@@ -12,7 +13,7 @@
     border-bottom:1px solid white;
 }
 .active{
-    padding:.5em;
+    padding:.25em;
     background:white;
     border-radius:25px;
     color:#00aeff;

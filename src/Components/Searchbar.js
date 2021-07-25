@@ -22,7 +22,7 @@ function Searchbar({search,setSearch,magnify,setMagnify,types,setTypes}) {
                     placeholder= {magnify ? 'Enter image type' : ''}
                     value = {search} 
                     onChange = {searchHandle}
-                    className = {!magnify ? 'unClick' : ''}
+                    className = {`searchInput ${!magnify ? 'unClick' : ''}`}
                 />
                 <FontAwesomeIcon 
                     icon={faSearch} 

@@ -3,9 +3,16 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height:80px;   
     width:70%;
-    margin:0 auto 1.5em;
+    height:70px;
+    padding:0 1em;
+    margin:auto;
+    background:#00aeff;
+    transition:all 1s;
+}
+.typeContainer:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition:all 1s;
 }
 .typeContainer h2{
     margin-right:.5em;
@@ -33,3 +40,30 @@
     margin-left:.5em;
     color:#e2f3f5;
 }
+.addNewType{
+    width:20%;
+    margin:0 auto 1em;
+    position:relative;
+}
+.addNewType input{
+    padding:.5em;
+    width:100%;
+    border:none;
+    border-radius: 15px;
+    height:30px;
+    outline:none;
+}
+.addTypeBtn{
+    position:absolute;
+    background:red;
+    font-size:2rem;
+    border-radius:50px;
+    right:5%;
+    top:23%;
+}
+.advice{
+    margin-bottom:.5em;
+    opacity:0;
+    height:20px;
+}
+.activeAdd{opacity:1;}

@@ -1,32 +1,34 @@
+import { v4 as uuid_v4 } from "uuid";
+
 export const imagesdata = [
     {
         type:'all',
         select:true,
-        id:'1'
+        id:uuid_v4()
     },
     {
         type:'camera',
         select:false,
-        id:'2'
+        id:uuid_v4()
     },
     {
         type:'headphone',
         select:false,
-        id:'3'
+        id:uuid_v4()
     },
     {
         type:'watch',
         select:false,
-        id:'4'
+        id:uuid_v4()
     },
     {
         type:'shoe',
         select:false,
-        id:'5'
+        id:uuid_v4()
     },
     {
         type:'glasses',
         select:false,
-        id:'6'
+        id:uuid_v4()
     }
 ]
