@@ -1,5 +1,7 @@
 import React from 'react'
 import './Typeselect.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 function Typeselect({type,types,setTypes}) {
     const clickHandle = ()=>{
         if(type.type === 'all'){
@@ -21,12 +23,18 @@ function Typeselect({type,types,setTypes}) {
         }))
 
     }
+    const del = (e)=>{
+        alert(`Type delete`)
+        setTypes(types.filter(t => t.id !== type.id))
+        e.stopPropagation()
+    }
     return (
         <div 
             className={`type ${type.select ? 'active' : ''}`}
             onClick = {clickHandle}
         >
             {type.type}
+            {type.type !== 'all' ? <FontAwesomeIcon icon = {faTimesCircle} className = 'delete' onClick = {del}/> : ''}
         </div>
     )
 }

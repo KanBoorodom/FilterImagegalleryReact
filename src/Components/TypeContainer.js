@@ -1,27 +1,38 @@
-import React,{useState} from 'react'
+import React from 'react'
 import Typeselect from './Typeselect'
 import './TypeContainer.css'
 import { v4 as uuid_v4 } from "uuid";
 
-function TypeContainer({types,setTypes,magnify,setMagnify}) {
-    const [addNewType,setAddNewType] = useState(false) 
-    const keydownHandle = (e)=>{
-        if(e.keyCode === 13){
-            setAddNewType(false)
-            setTypes([...types,
-                    {
-                        type:e.target.value,
-                        select:false,
-                        id:uuid_v4()
+function TypeContainer({types,setTypes,magnify,setMagnify,inputType,setInputType}) {
+    const changeHandle = (e)=>{
+        setInputType(e.target.value)
+    }
+    var specialCheck = false
+    const keyHandle = (e) =>{
+        var duplicate = false
+        var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?\s]+/
+        if(e.keyCode === 13 && e.target.value !== ''){
+            if(!format.test(e.target.value)){
+                types.forEach(type => {
+                    if(type.type.toLowerCase() === e.target.value.toLowerCase()){
+                        alert('This type is alraedy exists')
+                        duplicate = true
                     }
-            ])
-            e.target.value = ''
-        }
-        else{
-            setAddNewType(true)
-        }
-        if(e.target.value === ''){
-            setAddNewType(true)
+                })
+                if(!duplicate){
+                    setTypes([...types,
+                        {
+                            type:e.target.value,
+                            select:false,
+                            id:uuid_v4()
+                        }
+                    ])
+                    setInputType('')
+                }
+            }
+            else{
+                alert('Type cannot contain special character or space')
+            }
         }
     }
     return (
@@ -31,14 +42,16 @@ function TypeContainer({types,setTypes,magnify,setMagnify}) {
             </div>
             <div className="addNewType">
                 <p 
-                    className= {`advice ${addNewType ? 'activeAdd' : ''}`} 
+                    className= {`advice ${inputType.length > 0 ? 'activeAdd' : ''}`} 
                 >
-                    {addNewType ? 'Press enter when you done' : ''}
+                    {inputType.length > 0 ? 'Press enter to add new type' : ''}
                 </p>
                 <input 
                     type="text" 
                     placeholder = 'Add new image type..'
-                    onKeyDown = {keydownHandle}    
+                    value = {inputType}
+                    onChange = {changeHandle}    
+                    onKeyDown = {keyHandle}
                 />
             </div>
         </div>

@@ -30,5 +30,10 @@ export const imagesdata = [
         type:'glasses',
         select:false,
         id:uuid_v4()
+    },
+    {
+        type:'bag',
+        select:false,
+        id:uuid_v4()
     }
 ]

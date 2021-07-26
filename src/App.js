@@ -10,6 +10,7 @@ import './App.css';
 function App() {
 /*   const [types,setTypes] = useState(imagesdata) */
   const [newTypes,setNewTypes] = useState(imagesdata)
+  const [inputType,setInputType] = useState('')
   const [images,setImages] = useState(imageInform)
   const [search,setSearch] = useState('')
   const [magnify, setMagnify] = useState(false)
@@ -19,7 +20,7 @@ function App() {
       /* Search */
       const searchFilter = []
       imagesdata.forEach(image => {
-        if(image.type.match(search) !== null && search !== ''){
+        if(image.type.match(search.toLowerCase()) !== null && search !== ''){
           searchFilter.push(image.type)
         }
       })
@@ -71,8 +72,9 @@ function App() {
     <div className="App">
         <Header 
             types = {newTypes} setTypes = {setNewTypes} 
+            inputType = {inputType} setInputType = {setInputType}
             search = {search} setSearch = {setSearch} 
-            magnify = {magnify} setMagnify = {setMagnify}    
+            magnify = {magnify} setMagnify = {setMagnify}     
         />
         {/* <Addtype />   */}
         <Imagesgallery images = {images} setImages = {setImages}/>

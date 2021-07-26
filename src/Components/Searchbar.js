@@ -20,7 +20,7 @@ function Searchbar({search,setSearch,magnify,setMagnify,types,setTypes}) {
                 <input 
                     type="text" 
                     placeholder= {magnify ? 'Enter image type' : ''}
-                    value = {search} 
+                    value = {magnify ? search : ''} 
                     onChange = {searchHandle}
                     className = {`searchInput ${!magnify ? 'unClick' : ''}`}
                 />
