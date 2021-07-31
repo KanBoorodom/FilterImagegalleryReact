@@ -1,6 +1,6 @@
 .type{
     position:relative;
-    padding:0;
+    padding:.6em;
     margin-right:1em;
     font-weight: 400;
     transition: all 1s;

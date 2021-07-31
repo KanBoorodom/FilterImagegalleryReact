@@ -12,7 +12,7 @@
     padding:2em 1em;
     background:white;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-    width:40%;
+    width:50%;
     height:500px;
     z-index:998;
 }
@@ -24,42 +24,11 @@
     text-align: left;
     text-transform: capitalize;
 }
-.info p{
-    
-}
-.info button{
-    font-size:1rem;
-    background:#00aeff;
-    color:white;
-    display:inline-block;
-    margin-top:1em;
-    text-decoration: none;
-    padding:.25em;
-    outline: none;
-    border:none;
-    transition:all 1s;
-    cursor:pointer;
-    text-transform: capitalize;
-}
+
 .clone{
     margin:0 .35em;
 }
-.gelatine {
-    animation: gelatine 0.5s;
-  }
-  @keyframes gelatine {
-    from, to { transform: scale(1, 1); }
-    25% { transform: scale(0.9, 1.1); }
-    50% { transform: scale(1.1, 0.9); }
-    75% { transform: scale(0.95, 1.05); }
-  }
-  .hide{opacity: 0;}
-  .show{
-    font-size:.7em;
-    margin-left:1.75em;
-    color:#00aeff;
-    width:fit-content;
-}
+
 .close{
     position:absolute;
     font-size:2rem;

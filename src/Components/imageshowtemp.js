@@ -1,13 +1,11 @@
 import React,{useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClone,faTrash,faTimesCircle } from '@fortawesome/free-solid-svg-icons'
-import Button from './Button'
 import './ImageShow.css'
 
 function ImageShow({image,images,setImages}) {
-    const [copy,setCopy] = useState(false)
-    const [del,setDel] = useState(false)
-    const cpySrc = ()=>{
+    const [bounce,setBounce] = useState(false)
+    const clickHandle = ()=>{
         var src = image.src
         var dummy = document.createElement("textarea");
         document.body.appendChild(dummy);
@@ -15,9 +13,11 @@ function ImageShow({image,images,setImages}) {
         dummy.select();
         document.execCommand("copy");
         document.body.removeChild(dummy);
-        
+        setBounce(!bounce)
     }
-
+    const leaveHandle = ()=>{
+        setBounce(false)
+    }
     const close  = ()=>{
         setImages(images.map(i => {
             if(i.id === image.id){
@@ -32,21 +32,23 @@ function ImageShow({image,images,setImages}) {
             <div className="info">
                 <div>Image Type: {image.type}</div>
                 <p>Image Info: {image.info}</p>
-                <Button
-                    setName = {setCopy} 
-                    btnText = 'Image Src'
-                    icon = {faClone}
-                    click = {cpySrc}
-                    bgColor = '#00aeff'
-                />
-                <Button
-                    setName = {setDel} 
-                    btnText = 'Delete image'
-                    icon = {faTrash}
-                    click = {cpySrc}
-                    bgColor = 'red'
-                />
-                {copy ? <div>Coppied</div> : ''}
+                <button  
+                    onClick = {clickHandle} 
+                    onMouseUp = {leaveHandle}
+                    onMouseLeave = {leaveHandle}
+                    className = {bounce ? 'gelatine' : ''}>
+                        image src
+                        <FontAwesomeIcon icon={faClone} className = 'clone'/>
+                </button>
+                <button  
+                    onClick = {clickHandle} 
+                    onMouseUp = {leaveHandle}
+                    onMouseLeave = {leaveHandle}
+                    className = {bounce ? 'gelatine' : ''}>
+                        Delete
+                        <FontAwesomeIcon icon={faTrash} className = 'clone'/>
+                </button>
+                <div className = {bounce ? 'show' : 'hide'}>Coppied</div>
                 <FontAwesomeIcon icon = {faTimesCircle} className ='close' onClick = {close}/>
             </div>
         </div>

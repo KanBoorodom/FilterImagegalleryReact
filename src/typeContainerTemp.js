@@ -7,6 +7,7 @@ function TypeContainer({types,setTypes,magnify,setMagnify,inputType,setInputType
     const changeHandle = (e)=>{
         setInputType(e.target.value)
     }
+    var specialCheck = false
     const keyHandle = (e) =>{
         var duplicate = false
         var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?\s]+/

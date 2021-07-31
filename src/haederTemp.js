@@ -1,5 +1,6 @@
 import React from 'react'
-import Searchbar from './Searchbar'
+/* import Searchbar from './Searchbar' */
+import Input from './input'
 import TypeContainer from './TypeContainer'
 import GalleryName from './GalleryName' 
 import './Header.css'

@@ -1,37 +1,28 @@
 import React,{useState,useEffect} from 'react'
-import Input from './Components/Input'
-import GalleryName from './Components/GalleryName'
-import TypeContainer from './Components/TypeContainer'
+import Header from './Components/Header'
+/* import Addtype from './Components/Addtype' */
 import Imagesgallery from './Components/Imagesgallery'
 import ImageShow from './Components/ImageShow'
 import {imagesdata} from './Components/imagesdata'
 import {imageInform} from './Components/images'
 import './App.css';
 
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
-
 function App() {
-  /* Gallery Name */
-  const [galname,setGalName] = useState("Kan's filter image gallery")
-
-  /* Type  */
+/*   const [types,setTypes] = useState(imagesdata) */
   const [newTypes,setNewTypes] = useState(imagesdata)
   const [inputType,setInputType] = useState('')
-
-  /* Search */
+  const [images,setImages] = useState(imageInform)
   const [search,setSearch] = useState('')
   const [magnify, setMagnify] = useState(false)
+  
+
   const searchHandle = ()=>{
-    setMagnify(!magnify)
-    setNewTypes(newTypes.map(type => {
+    setIcon(!icon)
+    setTypes(types.map(type => {
         type.type === 'all' ? type.select = true :type.select  = false
         return type
     }))
   }
-
-  /* Image */
-  const [images,setImages] = useState(imageInform)
-  
   useEffect(()=>{
     const filterShowImage = () => {
       /* Search */
@@ -87,23 +78,13 @@ function App() {
   
   return (
     <div className="App">
-        <GalleryName galname = {galname} setGalName = {setGalName}/>
-        <TypeContainer 
-          types = {newTypes} setTypes = {setNewTypes} 
-          inputType = {inputType} setInputType = {setInputType}
-          magnify = {magnify} setMagnify = {setMagnify}    
+        <Header 
+            types = {newTypes} setTypes = {setNewTypes} 
+            inputType = {inputType} setInputType = {setInputType}
+            search = {search} setSearch = {setSearch} 
+            magnify = {magnify} setMagnify = {setMagnify}     
         />
-        <p>
-          {!magnify ? 'Click at magnify to activate search.'
-            :'Close search for select type.'}
-        </p>
-        <Input 
-                inputValue = {search} setInputValue = {setSearch} 
-                inputActive = {magnify}
-                placeHolderValue = {'Enter image type'}
-                iconType = {faSearch}
-                click = {searchHandle}
-        />
+        {/* <Addtype />   */}
         <Imagesgallery images = {images} setImages = {setImages}/>
         {
           images.map(image => {

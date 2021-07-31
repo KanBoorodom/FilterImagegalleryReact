@@ -29,6 +29,7 @@
     width:45px;
     pointer-events: none;
     border-radius: 500px;
+    color:white;
 }
 .closeSearch{
     position:absolute;
